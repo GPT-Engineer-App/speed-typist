@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
-const sampleText = "The quick brown fox jumps over the lazy dog.";
+const sampleText = "素早い茶色の狐が怠けた犬を飛び越える。";
 
 const TypingPractice = () => {
   const [userInput, setUserInput] = useState("");
@@ -40,7 +40,7 @@ const TypingPractice = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-4">
-      <h1 className="text-3xl mb-4">Typing Practice</h1>
+      <h1 className="text-3xl mb-4">タイピング練習</h1>
       <div className="mb-4 text-xl">{getHighlightedText()}</div>
       <Input
         ref={inputRef}
@@ -50,7 +50,7 @@ const TypingPractice = () => {
         className="mb-4"
       />
       <Button onClick={handleStart}>
-        {isStarted ? "Restart" : "Start"} Typing Practice
+        {isStarted ? "再開" : "タイピング練習を開始"}
       </Button>
     </div>
   );

@@ -13,12 +13,12 @@ import { CircleUser, Menu, Package2, Home, Keyboard } from "lucide-react";
 import { NavLink, Outlet } from "react-router-dom";
 export const navItems = [
   {
-    title: "Home",
+    title: "ホーム",
     to: "/",
     icon: <Home className="h-4 w-4" />,
   },
   {
-    title: "Typing Practice",
+    title: "タイピング練習",
     to: "/typing-practice",
     icon: <Keyboard className="h-4 w-4" />,
   },
@@ -46,7 +46,7 @@ const DesktopNav = () => (
       className="flex items-center gap-2 text-lg font-semibold md:text-base"
     >
       <Package2 className="h-6 w-6" />
-      <span className="sr-only">Typing App</span>
+      <span className="sr-only">タイピングアプリ</span>
     </NavItem>
     {navItems.map((item) => (
       <NavItem key={item.to} to={item.to}>
@@ -61,7 +61,7 @@ const MobileNav = () => (
     <SheetTrigger asChild>
       <Button variant="outline" size="icon" className="shrink-0 md:hidden">
         <Menu className="h-5 w-5" />
-        <span className="sr-only">Toggle navigation menu</span>
+        <span className="sr-only">ナビゲーションメニューを切り替え</span>
       </Button>
     </SheetTrigger>
     <SheetContent side="left">
@@ -71,7 +71,7 @@ const MobileNav = () => (
           className="flex items-center gap-2 text-lg font-semibold"
         >
           <Package2 className="h-6 w-6" />
-          <span className="sr-only">Typing App</span>
+          <span className="sr-only">タイピングアプリ</span>
         </NavItem>
         {navItems.map((item) => (
           <NavItem key={item.to} to={item.to}>
@@ -88,16 +88,16 @@ const UserMenu = () => (
     <DropdownMenuTrigger asChild>
       <Button variant="secondary" size="icon" className="rounded-full">
         <CircleUser className="h-5 w-5" />
-        <span className="sr-only">Toggle user menu</span>
+        <span className="sr-only">ユーザーメニューを切り替え</span>
       </Button>
     </DropdownMenuTrigger>
     <DropdownMenuContent align="end">
-      <DropdownMenuLabel>My Account</DropdownMenuLabel>
+      <DropdownMenuLabel>マイアカウント</DropdownMenuLabel>
       <DropdownMenuSeparator />
-      <DropdownMenuItem>Settings</DropdownMenuItem>
-      <DropdownMenuItem>Support</DropdownMenuItem>
+      <DropdownMenuItem>設定</DropdownMenuItem>
+      <DropdownMenuItem>サポート</DropdownMenuItem>
       <DropdownMenuSeparator />
-      <DropdownMenuItem>Logout</DropdownMenuItem>
+      <DropdownMenuItem>ログアウト</DropdownMenuItem>
     </DropdownMenuContent>
   </DropdownMenu>
 );

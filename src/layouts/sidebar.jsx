@@ -59,7 +59,7 @@ const MobileSidebar = () => (
     <SheetTrigger asChild>
       <Button variant="outline" size="icon" className="shrink-0 md:hidden">
         <Menu className="h-5 w-5" />
-        <span className="sr-only">Toggle navigation menu</span>
+        <span className="sr-only">ナビゲーションメニューを切り替え</span>
       </Button>
     </SheetTrigger>
     <SheetContent side="left" className="flex flex-col">
@@ -86,16 +86,16 @@ const UserDropdown = () => (
     <DropdownMenuTrigger asChild>
       <Button variant="secondary" size="icon" className="rounded-full">
         <CircleUser className="h-5 w-5" />
-        <span className="sr-only">Toggle user menu</span>
+        <span className="sr-only">ユーザーメニューを切り替え</span>
       </Button>
     </DropdownMenuTrigger>
     <DropdownMenuContent align="end">
-      <DropdownMenuLabel>My Account</DropdownMenuLabel>
+      <DropdownMenuLabel>マイアカウント</DropdownMenuLabel>
       <DropdownMenuSeparator />
-      <DropdownMenuItem>Settings</DropdownMenuItem>
-      <DropdownMenuItem>Support</DropdownMenuItem>
+      <DropdownMenuItem>設定</DropdownMenuItem>
+      <DropdownMenuItem>サポート</DropdownMenuItem>
       <DropdownMenuSeparator />
-      <DropdownMenuItem>Logout</DropdownMenuItem>
+      <DropdownMenuItem>ログアウト</DropdownMenuItem>
     </DropdownMenuContent>
   </DropdownMenu>
 );
